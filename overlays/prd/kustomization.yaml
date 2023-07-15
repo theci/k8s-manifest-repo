@@ -4,5 +4,7 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/demo-frontend
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/demo-frontend
   newTag: abcdefg
+- name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/
+  newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/
 resources:
 - ../../resources
