@@ -3,5 +3,8 @@ kind: Kustomization
 images:
 - name: /
   newName: /
+- name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
+  newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
+  newTag: 50a478534118684e416b0149ddac853b8fa51807
 resources:
 - ../../resources
