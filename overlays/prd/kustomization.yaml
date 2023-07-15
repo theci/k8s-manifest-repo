@@ -5,11 +5,11 @@ images:
   newName: /
 - name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
-  newTag: c6ead48eb59ba16881c0cadec1b50546c1912e90
+  newTag: 87ce97b32b42778bc50550632b8b9c1ca737d6e7
 resources:
 - ../../resources
 patches:
-  - path: deployment-patch.yaml
-    target:
-      kind: Deployment
-      name: my-deployment
+- path: deployment-patch.yaml
+  target:
+    kind: Deployment
+    name: my-deployment
