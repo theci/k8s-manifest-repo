@@ -1,18 +1,37 @@
 apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: istio-gateway
+  labels:
+    app: istio-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: my-virtualservice
+  name: istio-vs
+  labels:
+    app: istio-vs
 spec:
   hosts:
-    - "*"
+  - "*"
   gateways:
-    - my-gateway
+  - istio-gateway
   http:
-    - match:
-        - uri:
-            prefix: /
+    - name: primary
       route:
         - destination:
-            host: my-service
-            port:
-              number: 80
+            host: demo
+          weight: 80
+        - destination:
+            host: demo-canary
+          weight: 20
