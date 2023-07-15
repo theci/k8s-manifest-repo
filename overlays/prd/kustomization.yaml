@@ -5,4 +5,4 @@ images:
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
   newTag: 0c4a83c898ad94880876318c313f438f194cb421
 resources:
-- ../../resources/deployment.yaml
+- deployment.yaml
