@@ -1,5 +1,20 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
+<<<<<<< HEAD
 resources:
 - ../../resources
+=======
+- name: /
+  newName: /
+- name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
+  newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
+  newTag: 87ce97b32b42778bc50550632b8b9c1ca737d6e7
+resources:
+- ../../resources
+patches:
+- path: deployment-patch.yaml
+  target:
+    kind: Deployment
+    name: my-deployment
+>>>>>>> e54711df2db19f9c4b9c579c0d42cda15b369f91
