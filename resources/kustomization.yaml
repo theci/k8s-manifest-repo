@@ -1,9 +1,4 @@
+resources:
+- deployment.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-resources:
-  - deployment.yaml
-  - service.yaml
-  - gateway.yaml
-images:
-  - name: {{IMAGE_NAME}}
-    newTag: {{NEW_IMAGE_TAG}}
