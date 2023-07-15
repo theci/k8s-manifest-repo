@@ -1,12 +1,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
+- name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/
+  newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/
+  newTag: 71b3b736d3581c0bd22ec049e5734259a0e5e0cb
 - name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/demo-frontend
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/demo-frontend
   newTag: ee00321efae0e56333db6e2ab2b09afb646dd987
-resources:
 #  - ../../resources
-  - virtualservice.yaml
-  - deployment.yaml
-  - service.yaml
-  - gateway.yaml
+resources:
+- virtualservice.yaml
+- deployment.yaml
+- service.yaml
+- gateway.yaml
