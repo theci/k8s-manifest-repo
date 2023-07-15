@@ -1,8 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: apeachcloud/test-home
-  newName: apeachcloud/test-home
-  newTag: v0.0
+- name: /
+  newName: /
 resources:
-- deployment.yaml
+- ../../resources
