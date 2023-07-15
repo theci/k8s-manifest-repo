@@ -8,6 +8,9 @@ spec:
   gateways:
     - my-gateway
   http:
+    - match:
+        - uri:
+            prefix: /
     - route:
         - destination:
             host: primary-service
