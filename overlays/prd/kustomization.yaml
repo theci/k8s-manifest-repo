@@ -5,9 +5,9 @@ images:
   newName: /
 - name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
-  newTag: ae8e1b5d09aaf701efeb2ca7fc164053244089a9
+  newTag: c6ead48eb59ba16881c0cadec1b50546c1912e90
 resources:
 - ../../resoures
 patchesStrategicMerge:
-  - deployment-patch.yaml
-  - service-patch.yaml
+- deployment-patch.yaml
+- service-patch.yaml
