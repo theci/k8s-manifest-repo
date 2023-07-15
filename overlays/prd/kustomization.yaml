@@ -9,5 +9,7 @@ images:
 resources:
 - ../../resources
 patches:
-- deployment-patch.yaml
-- service-patch.yaml
+  - path: deployment-patch.yaml
+    target:
+      kind: Deployment
+      name: my-deployment
