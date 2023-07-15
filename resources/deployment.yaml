@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-home-v0
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-home
+      version: v0
+  template:
+    metadata:
+      labels:
+        app: test-home
+        version: v0
+    spec:
+      containers:
+      - name: test-home
+        image: apeachcloud/test-home:v0.0
+        ports:
+        - containerPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-home-v1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-home
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: test-home
+        version: v1
+    spec:
+      containers:
+      - name: test-home
+        image: apeachcloud/test-home:v1.0
+        ports:
+        - containerPort: 80

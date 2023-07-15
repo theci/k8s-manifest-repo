@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: my-destinationrule
+spec:
+  host: my-primary-service
+  subsets:
+    - name: primary
+      labels:
+        app: my-app
+        track: primary
+    - name: canary
+      labels:
+        app: my-app
+        track: canary
