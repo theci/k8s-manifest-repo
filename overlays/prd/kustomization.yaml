@@ -3,6 +3,6 @@ kind: Kustomization
 images:
 - name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
-  newTag: 4aeef9a3b77a18c5c536bb27f357f7ca2de7f84f
+  newTag: 0c4a83c898ad94880876318c313f438f194cb421
 resources:
 - ../../resources/deployment.yaml
