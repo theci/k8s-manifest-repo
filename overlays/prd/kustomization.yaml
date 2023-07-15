@@ -5,4 +5,4 @@ images:
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/demo-frontend
   newTag: ee00321efae0e56333db6e2ab2b09afb646dd987
 resources:
-- ../../resources
+  - ../../resources
