@@ -4,8 +4,5 @@ images:
 - name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/
   newTag: 6d2136ab02ecbe6c87dd3938aec5ff50efbbef22
-- name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/demo-frontend
-  newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/demo-frontend
-  newTag: abcdefg
 resources:
 - ../../resources
