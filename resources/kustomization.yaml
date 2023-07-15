@@ -1,6 +1,7 @@
 resources:
-- deployment.yaml
-- service.yaml
+- rollout.yaml
+#- deployment.yaml
+#- service.yaml
 - gateway.yaml
 - virtualservice.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
