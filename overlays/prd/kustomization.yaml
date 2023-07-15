@@ -5,6 +5,6 @@ images:
   newName: /
 - name: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
   newName: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci
-  newTag: 50a478534118684e416b0149ddac853b8fa51807
+  newTag: 52378416fe7a2116cf3cd96a7f681398336144f0
 resources:
 - ../../resources
