@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: primary
-        image: apeachcloud/test-home:v0.0
+        image: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci:d042afb7179b1ef21511cb2be7531caae811dfdc
         ports:
         - containerPort: 80
 ---
@@ -38,6 +38,6 @@ spec:
     spec:
       containers:
       - name: canary
-        image: apeachcloud/test-home:v2.0
+        image: 782638322607.dkr.ecr.ap-northeast-2.amazonaws.com/theci:d042afb7179b1ef21511cb2be7531caae811dfdc
         ports:
         - containerPort: 80
